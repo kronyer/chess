@@ -12,9 +12,20 @@ namespace Chess_Curso
             {
                 PartidaDeXadrez partida = new PartidaDeXadrez();
 
-                
+                while (!partida.Terminada)
+                {
+                    Console.Clear();
+                    Tela.ImprimirTabuleiro(partida.Tab);
 
-                Tela.ImprimirTabuleiro(partida.Tab);
+                    Console.WriteLine("origem");
+                    Posicao origem = Tela.LerPosicaoXadrez().ToPosicao();
+                    Console.WriteLine("destino");
+                    Posicao destino = Tela.LerPosicaoXadrez().ToPosicao();
+
+                    partida.ExecutaMovimento(origem, destino);
+
+                }
+
             }
             catch (TabuleiroException ex)
             {
