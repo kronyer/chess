@@ -17,10 +17,7 @@ namespace Chess_Curso
                     try
                     {
                         Console.Clear();
-                        Tela.ImprimirTabuleiro(partida.Tab);
-                        Console.WriteLine();
-                        Console.WriteLine("Turno " + partida.Turno);
-                        Console.WriteLine("Aguardando jogada da " + partida.JogadorAtual);
+                        Tela.ImprimirPartida(partida);
 
                         Console.WriteLine();
                         Console.WriteLine("Origem: ");
