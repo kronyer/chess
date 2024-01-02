@@ -15,10 +15,18 @@ namespace Chess_Curso
             ImprimirPecasCapturadas(partida);
             Console.WriteLine();
             Console.WriteLine("Turno " + partida.Turno);
-            Console.WriteLine("Aguardando jogada da " + partida.JogadorAtual);
-            if (partida.Xeque == true)
+            if (!partida.Terminada)
             {
-                Console.WriteLine("XEQUE!!");
+                Console.WriteLine("Aguardando jogada da " + partida.JogadorAtual);
+                if (partida.Xeque == true)
+                {
+                    Console.WriteLine("XEQUE!!");
+                }
+            }
+            else
+            {
+                Console.WriteLine("XEQUEMATE");
+                Console.WriteLine("Vencedor: " + partida.JogadorAtual);
             }
         }
 
