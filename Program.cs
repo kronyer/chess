@@ -10,14 +10,11 @@ namespace Chess_Curso
         {
             try
             {
-                Tabuleiro tab = new Tabuleiro(8, 8);
+                PartidaDeXadrez partida = new PartidaDeXadrez();
 
-                tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
-                tab.ColocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
+                
 
-                tab.ColocarPeca(new Rei(tab, Cor.Preta), new Posicao(5, 0));
-
-                Tela.ImprimirTabuleiro(tab);
+                Tela.ImprimirTabuleiro(partida.Tab);
             }
             catch (TabuleiroException ex)
             {

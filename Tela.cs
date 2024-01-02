@@ -26,13 +26,13 @@ namespace Chess_Curso
         {
             if (peca.Cor == Cor.Branca)
             {
-                Console.WriteLine(peca);
+                Console.Write(peca + " ");
             }
             else
             {
                 ConsoleColor aux = Console.ForegroundColor;
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.Write(peca);
+                Console.Write(peca + " ");
                 Console.ForegroundColor = aux;
             }
         }
