@@ -18,6 +18,14 @@ namespace tabuleiro
             Tab = tab;
             QteMovimentos = 0;
         }
+        public void IncrementarQteMovimentos()
+        {
+            QteMovimentos++;
+        }
+        public void DecrementarQteMovimentos()
+        {
+            QteMovimentos--;
+        }
 
         public bool ExisteMovimentosPossiveis()
         {

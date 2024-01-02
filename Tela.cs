@@ -16,6 +16,10 @@ namespace Chess_Curso
             Console.WriteLine();
             Console.WriteLine("Turno " + partida.Turno);
             Console.WriteLine("Aguardando jogada da " + partida.JogadorAtual);
+            if (partida.Xeque == true)
+            {
+                Console.WriteLine("XEQUE!!");
+            }
         }
 
         public static void ImprimirPecasCapturadas(PartidaDeXadrez partida)
